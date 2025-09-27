@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saran & Masukan - IPNU IPPNU Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo resmi.png.png" alt="Logo" />
+        <span>IPNU IPPNU Media</span>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="navMenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="artikel.html">Artikel</a></li>
+          <li><a href="opini.html">Opini</a></li>
+          <li><a href="esai.html">Esai</a></li>
+          <li><a href="karya.html">Karya Ilmiah</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li>
+            <a href="sarandanmasukan.html" class="active">Saran & Masukan</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Halaman Saran & Masukan -->
+    <main class="kontak-page">
+      <h1>Saran & Masukan</h1>
+      <p class="intro">
+        Kami sangat menghargai setiap saran, kritik, dan masukan dari pembaca
+        agar media IPNU IPPNU bisa semakin berkembang. Silakan isi formulir di
+        bawah ini, setiap masukan Anda akan langsung kami terima melalui email
+        resmi.
+      </p>
+
+      <!-- Form kirim ke email -->
+      <form
+        class="kontak-form"
+        action="https://formsubmit.co/akunsecondme43@gmail.com"
+        method="POST"
+      >
+        <!-- Agar FormSubmit bekerja -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Pesan Baru dari Website IPNU IPPNU Media"
+        />
+        <input type="hidden" name="_template" value="table" />
+
+        <label for="nama">Nama</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama Anda"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email Anda"
+          required
+        />
+
+        <label for="pesan">Pesan / Masukan</label>
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="5"
+          placeholder="Tulis masukan Anda di sini..."
+          required
+        ></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <div class="kontak-info">
+        <h2>Kontak Resmi</h2>
+        <p>
+          Email:
+          <a href="mailto:akunsecondme43@gmail.com">akunsecondme43@gmail.com</a>
+        </p>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/ipnuippnu" target="_blank"
+            >@ipnuippnu</a
+          >
+        </p>
+        <p>Alamat: Kantor Pusat IPNU IPPNU, Jakarta, Indonesia</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

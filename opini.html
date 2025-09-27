@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opini - IPNU IPPNU Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo resmi.png.png" alt="Logo" />
+        <span>IPNU IPPNU Media</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <ul class="dropdown-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Karya Ilmiah</a>
+            <ul class="dropdown-menu">
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="opini.html" class="active">Opini</a></li>
+              <li><a href="esai.html">Esai</a></li>
+            </ul>
+          </li>
+          <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Halaman Opini -->
+    <main class="opini-page">
+      <article class="opini">
+        <h1>Opini: Pendidikan Karakter di Era Digital</h1>
+        <p class="meta">Ditulis oleh <b>Aisyah</b> • 13 September 2025</p>
+
+        <p>
+          Pendidikan di era digital menghadirkan tantangan baru bagi generasi
+          muda. Informasi yang mudah diakses dapat menjadi peluang sekaligus
+          ancaman apabila tidak diimbangi dengan pendidikan karakter yang kuat.
+        </p>
+
+        <p>
+          Peran sekolah, keluarga, dan organisasi pelajar sangat penting dalam
+          menanamkan nilai-nilai akhlak, kedisiplinan, dan tanggung jawab.
+          Teknologi hanyalah alat, sedangkan yang menentukan arah penggunaannya
+          adalah manusia itu sendiri.
+        </p>
+
+        <p>
+          IPNU dan IPPNU sebagai organisasi pelajar memiliki posisi strategis
+          dalam mengarahkan generasi muda agar tidak hanya melek teknologi,
+          tetapi juga tetap berpegang pada nilai-nilai keislaman dan kebangsaan.
+        </p>
+
+        <p>
+          Pendidikan karakter di era digital bukanlah sekadar tambahan,
+          melainkan fondasi utama agar perkembangan teknologi dapat benar-benar
+          membawa manfaat bagi kemajuan bangsa.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
+    </footer>
+
+    <!-- Script untuk tombol menu -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #b8840b, #ffd900f3);
+  /* gold pekat ke gold terang */
+  color: black;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-bottom: 3px solid #006400;
+  /* shadow bawah */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu awalnya tersembunyi */
+.nav-links {
+  display: none;
+  width: 100%;
+}
+
+.nav-links ul {
+  list-style: none;
+  flex-direction: column;
+  background: #004d00;
+  width: 100%;
+  border-radius: 8px; /* bikin sudut tumpul */
+  overflow: hidden; /* biar border radius rapi */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* bayangan halus */
+}
+
+.nav-links ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links ul li a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+  background: #ffcc00;
+  color: #006400;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background: #006400;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Aktifkan menu ketika toggle diklik */
+.nav-links.active {
+  display: flex;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #00cc44, #008000);
+  color: whitesmoke;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero p {
+  color: black;
+  margin-top: 10px; /* jarak atas paragraf */
+  margin-bottom: 20px; /* jarak bawah paragraf */
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #006400;
+
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* Footer */
+footer {
+  background: #006200; /* hijau tua */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 55px;
+  font-weight: bold;
+}
+main h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+/* Halaman Sejarah & Visi Misi */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #006400;
+}
+
+main h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #004d00;
+  font-size: 22px;
+}
+
+main p,
+main ul {
+  font-size: 16px;
+  text-align: justify;
+}
+
+main ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.karya-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.karya-cards .card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.karya-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.karya-cards .card h3 {
+  color: #006400;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.karya-cards .card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.karya-cards .card p a {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.karya-cards .card p a:hover {
+  color: #006400;
+  text-decoration: underline;
+}
+
+/* Halaman Kontak */
+.kontak-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kontak-page h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #004d00;
+  margin-bottom: 15px;
+}
+
+.kontak-page .intro {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #555;
+}
+
+.kontak-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kontak-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.kontak-form input:focus,
+.kontak-form textarea:focus {
+  border-color: #008000;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 128, 0, 0.3);
+}
+
+.kontak-form button {
+  background: #008000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.kontak-form button:hover {
+  background: #006400;
+}
+
+.kontak-info {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.kontak-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #004d00;
+}
+
+.kontak-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.kontak-info a {
+  color: #008000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kontak-info a:hover {
+  text-decoration: underline;
+}
+
+/* Background dengan logo samar */
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/logo\ PR.jpeg") no-repeat center center;
+  background-size: 900px; /* ubah sesuai kebutuhan (200px–500px) */
+  opacity: 0.2; /* semakin kecil semakin samar */
+  z-index: -1;
+}
+
+body.home {
+  background-position: center 180px; /* geser ke bawah */
+}

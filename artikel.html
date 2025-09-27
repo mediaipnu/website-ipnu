@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel - IPNU IPPNU Media</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo resmi.png.png" alt="Logo" />
+      <span>IPNU IPPNU Media</span>
+    </div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Tentang Kami</a>
+          <ul class="dropdown-menu">
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="visi-misi.html">Visi & Misi</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="active">Karya Ilmiah</a>
+          <ul class="dropdown-menu">
+            <li><a href="artikel.html" class="active">Artikel</a></li>
+            <li><a href="opini.html">Opini</a></li>
+            <li><a href="esai.html">Esai</a></li>
+          </ul>
+        </li>
+        <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Halaman Artikel -->
+  <main class="artikel-page">
+    <article class="artikel">
+      <h1>Membangun Generasi Cerdas Melalui Pendidikan Berkualitas</h1>
+      <p class="meta">Ditulis oleh <b>Redaksi</b> • 13 September 2025</p>
+
+      <p>
+        Pendidikan merupakan salah satu pilar utama dalam membangun peradaban bangsa.
+        Melalui pendidikan yang berkualitas, generasi muda tidak hanya dibekali pengetahuan,
+        tetapi juga ditanamkan nilai moral, etika, dan tanggung jawab sosial.
+      </p>
+
+      <p>
+        Di era globalisasi saat ini, tantangan dunia pendidikan semakin kompleks.
+        Perkembangan teknologi digital membuka peluang besar bagi pelajar untuk mengakses
+        ilmu pengetahuan dari berbagai sumber. Namun di sisi lain, hal ini juga menuntut
+        kemampuan literasi digital agar siswa tidak sekadar menjadi konsumen informasi,
+        tetapi juga mampu memilah, menganalisis, dan memanfaatkannya untuk kebaikan.
+      </p>
+
+      <p>
+        Peran guru, orang tua, dan masyarakat sangat penting dalam menciptakan lingkungan
+        belajar yang kondusif. Guru tidak hanya berperan sebagai pengajar, tetapi juga
+        sebagai teladan dan pembimbing karakter. Sementara itu, orang tua dituntut untuk
+        lebih peduli dan terlibat aktif dalam mendampingi anak-anaknya belajar.
+      </p>
+
+      <p>
+        Organisasi pelajar seperti <b>IPNU dan IPPNU</b> memiliki kontribusi nyata dalam
+        mendukung dunia pendidikan. Melalui kegiatan-kegiatan positif, organisasi ini
+        mampu menumbuhkan semangat belajar, melatih kepemimpinan, serta membentuk
+        karakter pelajar yang berakhlak mulia, berilmu, dan bertanggung jawab.
+      </p>
+
+      <p>
+        Harapan ke depan, pendidikan di Indonesia mampu melahirkan generasi yang tidak
+        hanya cerdas secara intelektual, tetapi juga memiliki keimanan, kepribadian luhur,
+        serta semangat kebangsaan yang kuat. Dengan demikian, cita-cita untuk mencetak
+        generasi emas bangsa Indonesia bukanlah hal yang mustahil untuk diwujudkan.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IPNU & IPPNU Media</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

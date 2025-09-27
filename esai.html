@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esai - IPNU IPPNU Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo resmi.png.png" alt="Logo" />
+        <span>IPNU IPPNU Media</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <ul class="dropdown-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Karya Ilmiah</a>
+            <ul class="dropdown-menu">
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="opini.html">Opini</a></li>
+              <li><a href="esai.html">Esai</a></li>
+            </ul>
+          </li>
+          <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Halaman Esai -->
+    <main class="esai-page">
+      <article class="esai">
+        <h1>Esai: Tantangan Pelajar di Era Globalisasi</h1>
+        <p class="meta">
+          Ditulis oleh <b>Muhammad Rizki</b> • 13 September 2025
+        </p>
+
+        <p>
+          Globalisasi membawa arus perubahan yang begitu cepat dalam berbagai
+          bidang kehidupan. Informasi, budaya, dan teknologi bergerak lintas
+          batas tanpa mengenal ruang dan waktu. Kondisi ini menghadirkan
+          tantangan tersendiri bagi para pelajar yang hidup di dalamnya.
+        </p>
+
+        <p>
+          Salah satu tantangan utama adalah bagaimana pelajar dapat
+          mempertahankan jati diri dan nilai-nilai lokal di tengah derasnya arus
+          budaya global. Tanpa pegangan yang kuat, dikhawatirkan pelajar akan
+          kehilangan identitasnya sebagai generasi bangsa Indonesia.
+        </p>
+
+        <p>
+          Di sisi lain, globalisasi juga membuka peluang besar untuk berkembang.
+          Akses terhadap ilmu pengetahuan, teknologi, dan jejaring internasional
+          semakin luas. Pelajar dapat memanfaatkannya untuk meningkatkan
+          kualitas diri serta ikut berkontribusi dalam percaturan global.
+        </p>
+
+        <p>
+          Organisasi pelajar seperti IPNU dan IPPNU memiliki peran strategis
+          dalam mendampingi pelajar menghadapi tantangan globalisasi. Dengan
+          membekali pelajar dengan ilmu, iman, dan akhlak mulia, diharapkan
+          mereka mampu menjadi generasi yang adaptif, inovatif, sekaligus tetap
+          berpegang pada nilai-nilai ke-NU-an.
+        </p>
+
+        <p>
+          Oleh karena itu, penting bagi pelajar untuk memandang globalisasi
+          bukan sebagai ancaman, tetapi sebagai kesempatan untuk memperluas
+          wawasan dan memperkuat identitas. Dengan demikian, pelajar Indonesia
+          akan mampu menjadi agen perubahan yang membawa bangsa ini menuju masa
+          depan yang lebih baik.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
+    </footer>
+
+    <!-- Script menu -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
