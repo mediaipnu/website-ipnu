@@ -334,5 +334,5 @@ body::before {
 }
 
 body.home {
-  background-position: center 180px; /* geser ke bawah */
+  background-position: center 200px; /* geser ke bawah */
 }
