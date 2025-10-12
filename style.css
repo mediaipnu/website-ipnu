@@ -361,3 +361,16 @@ body.home {
 main {
   background: transparent !important; /* hilangkan latar putih global */
 }
+
+/* ===== Responsive background logo ===== */
+@media (max-width: 768px) {
+  body::before {
+    background-size: 400px; /* tampilan HP sedang */
+  }
+}
+
+@media (max-width: 480px) {
+  body::before {
+    background-size: 300px; /* tampilan HP kecil */
+  }
+}
