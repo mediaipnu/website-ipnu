@@ -336,3 +336,7 @@ body::before {
 body.home {
   background-position: center 200px; /* geser ke bawah */
 }
+
+.artikel-page .meta {
+  text-align: center;
+}
