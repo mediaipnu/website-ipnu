@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urgensi Literasi Digital di Era Disrupsi Teknologi</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Hapus box putih & biarkan background terlihat */
+      main.artikel-page {
+        max-width: 900px;
+        margin: 60px auto;
+        background: transparent; /* hilangkan warna latar */
+        padding: 40px 25px;
+        line-height: 1.8;
+        color: #222;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4); /* biar tetap jelas di atas background */
+      }
+
+      .artikel-page h2 {
+        color: #004d00;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+
+      .artikel-page .meta {
+        text-align: center;
+        color: #333;
+        font-style: italic;
+        margin-bottom: 30px;
+      }
+
+      .artikel-page p {
+        text-align: justify;
+        margin-bottom: 16px;
+        font-size: 17px;
+      }
+
+      .artikel-page i {
+        color: #004d00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo resmi.png.png" alt="Logo" />
+        <span>IPNU IPPNU Media</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <ul class="dropdown-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="active">Karya Ilmiah</a>
+            <ul class="dropdown-menu">
+              <li><a href="artikel.html" class="active">Artikel</a></li>
+              <li><a href="opini.html">Opini</a></li>
+              <li><a href="esai.html">Esai</a></li>
+            </ul>
+          </li>
+          <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Isi Artikel -->
+    <main class="artikel-page">
+      <article class="artikel">
+        <h2>URGENSI LITERASI DIGITAL DI ERA DISRUPSI TEKNOLOGI</h2>
+        <p class="meta">
+          <i>Ditulis oleh <b>Redaksi</b> • 13 September 2025</i>
+        </p>
+
+        <p>
+          Dunia yang semakin hari makin berubah akibat dorongan teknologi
+          digital telah membawa perubahan yang masif bagi kehidupan masyarakat.
+          Negara Indonesia sebagai salah satu negara dengan pengguna internet
+          terbesar di dunia merasakan dampak positif akan hal tersebut seperti
+          pertumbuhan ekonomi, layanan publik yang semakin mudah dalam
+          menyampaikan informasi dan sebagainya. Namun di balik kemajuan ini
+          tersembunyi beberapa tantangan besar karena akan terciptanya
+          informasi-informasi yang tidak valid atau berita hoaks yang
+          menyebabkan keresahan bagi masyarakat.
+        </p>
+
+        <p>
+          Pada zaman dulu arti literasi mungkin hanya berarti kemampuan membaca,
+          menulis serta berpikir. Namun kini pemahaman literasi sudah semakin
+          luas maknanya menjadi <b>literasi digital</b>.
+        </p>
+
+        <p>
+          Literasi digital tidak hanya sekadar mampu mengoperasikan aplikasi di
+          layar handphone kita atau sekadar scrolling TikTok, Instagram, dan
+          media sosial lainnya. Tetapi juga kemampuan menyaring dan menggunakan
+          teknologi secara bijak, tidak mengambil informasi mentah-mentah tanpa
+          dikaji terlebih dahulu, namun berpikir kritis mencari akar sumbernya.
+        </p>
+
+        <p>
+          Jadi, semakin masifnya teknologi di era modern ini menuntut kita, anak
+          muda dan penerus bangsa, untuk lebih kritis lagi dalam menyaring
+          informasi. Karena di era serba teknologi ini banyak sekali berita
+          hoaks dan kejahatan <i>cyber</i>. Literasi digital bukan lagi pilihan,
+          melainkan kebutuhan <i>urgent</i> agar kita dapat berpartisipasi
+          secara aman dan cerdas dalam masyarakat modern.
+        </p>
+
+        <p>
+          <i
+            >“Jangan paksakan anak-anakmu mengikuti jejakmu, mereka diciptakan
+            untuk kehidupan di zaman mereka, bukan zamanmu.”</i
+          >
+          – <b>Socrates</b>
+        </p>
+
+        <p>
+          Oleh karena itu, pemerintah dan masyarakat harus siap bergerak cepat
+          agar bangsa ini tidak hanya menjadi konsumen teknologi, tetapi juga
+          pengguna yang cerdas dan kritis.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

@@ -5,6 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artikel - IPNU IPPNU Media</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ======== Halaman Artikel ======== */
+      .artikel-list {
+        max-width: 900px;
+        margin: 60px auto;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .artikel-card {
+        background: rgba(255, 255, 255, 0.9);
+        border-left: 5px solid #ffd900;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .artikel-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .artikel-card h2 {
+        color: #004d00;
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+
+      .artikel-card p {
+        color: #555;
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 10px;
+      }
+
+      .btn-baca {
+        display: inline-block;
+        background: #006400;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .btn-baca:hover {
+        background: #ffd900;
+        color: #004d00;
+      }
+
+      @media (max-width: 768px) {
+        .artikel-list {
+          padding: 20px;
+        }
+        .artikel-card h2 {
+          font-size: 20px;
+        }
+        .artikel-card p {
+          font-size: 15px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -39,75 +109,45 @@
       </nav>
     </header>
 
-    <!-- Halaman Artikel -->
-    <main class="artikel-page">
-      <article class="artikel">
-        <h2>URGENSI LITERASI DIGITAL DI ERA DISRUPSI TEKNOLOGI</h2>
-        <p class="meta">Ditulis oleh <b>Redaksi</b> • 13 September 2025</p>
-
+    <!-- Daftar Artikel -->
+    <main class="artikel-list">
+      <div class="artikel-card">
+        <h2>Urgensi Literasi Digital di Era Disrupsi Teknologi</h2>
         <p>
-          dunia yang semakin hari makin berubah akibat dorongan teknologi
-          digital telah membawa perubahan yang masif bagi kehidupan masyarakat.
-          Negara Indonesia sebagai salah satu negara dengan pengguna internet
-          terbesar di dunia merasakan dampak positif akan hal tersebut seperti
-          pertumbuhan ekonomi, layanan publik yang semakin mudah dalam
-          menyampaikan informasi dll. Namun dibalik kemajuan ini tersembunyi
-          beberapa tantangan besar karena akan terciptanya informasi-informasi
-          yang tidak valid atau berita hoax yang menyebabkan keresahan bagi
-          masyarakat seperti kejadian 25 Agustus kemarin. bahkan penipuan pun
-          semakin rawan.
+          Dunia yang semakin hari makin berubah akibat dorongan teknologi
+          digital membawa perubahan besar bagi kehidupan masyarakat. Namun di
+          balik kemajuan ini juga muncul tantangan baru berupa berita hoaks dan
+          informasi tidak valid...
         </p>
+        <a href="artikel1.html" class="btn-baca">Baca Selengkapnya</a>
+      </div>
 
+      <div class="artikel-card">
+        <h2>Menanamkan Semangat Belajar di Era Modern</h2>
         <p>
-          pada zaman dulu arti literasi mungkin hanya berarti kan atau dipahami
-          sekedar kemampuan membaca dan menulis serta berpikir. Tapi kini ruang
-          lingkup pemahaman literasi sudah semakin luas maknanya menjadi
-          <b>literasi digital</b>.
+          Artikel tentang pentingnya menumbuhkan semangat belajar di kalangan
+          pelajar NU dalam menghadapi perkembangan zaman yang serba cepat...
         </p>
+        <a href="artikel2.html" class="btn-baca">Baca Selengkapnya</a>
+      </div>
 
+      <div class="artikel-card">
+        <h2>Peran IPNU IPPNU dalam Literasi Digital</h2>
         <p>
-          literasi digital tidak hanya mampu mengoperasikan aplikasi di layar
-          handphone kita, atau scrolling Tik Tok, Instagram, dan medsos lainnya.
-          Tetapi lebih pada kemampuan menyaring dan menggunakan teknologi secara
-          bijak tidak mengambil informasi mentah-mentah tanpa dikunyah terlebih
-          dahulu, tetapi kritis dalam mencari akar tersebut.
+          Bagaimana organisasi pelajar NU mengambil peran penting dalam
+          membentuk pelajar yang cerdas secara digital dan berakhlak baik...
         </p>
+        <a href="artikel3.html" class="btn-baca">Baca Selengkapnya</a>
+      </div>
 
+      <div class="artikel-card">
+        <h2>Pendidikan Karakter di Era Global</h2>
         <p>
-          Peran guru, orang tua, dan masyarakat sangat penting dalam menciptakan
-          lingkungan belajar yang kondusif. Guru tidak hanya berperan sebagai
-          pengajar, tetapi juga sebagai teladan dan pembimbing karakter.
-          Sementara itu, orang tua dituntut untuk lebih peduli dan terlibat
-          aktif dalam mendampingi anak-anaknya belajar.
+          Pentingnya pembentukan karakter dan moral di tengah kemajuan teknologi
+          dan budaya global yang semakin dinamis...
         </p>
-
-        <p>
-          jadi, semakin masifnya teknologi di era modern ini akan informasi,
-          masyarakat umumnya anak muda harus siap mengkawal orang tua yang masih
-          Awam karena kebanyakan dari golongan orang tua seringkali menyampaikan
-          sebuah informasi dari hasil melihat video pendek di media sosial
-          langsung jadikan referensi tanpa mencari tahu valid tidaknya informasi
-          tersebut.
-        </p>
-
-        <p>
-          maka dari itu kita selaku anak muda, selaku penerus bangsa harus lebih
-          kritis lagi dalam menyaring informasi. Karena di era serba teknologi
-          ini banyak sekali akan berita hoax seperti kejahatan <i>cyber</i>, dan
-          kesenjangan digital. Dampak dari masuknya teknologi ini ditentukan
-          dari kesiapan literasi masyarakat atau pengguna. literasi digital
-          bukan lagi sebuah pilihan melainkan sebuah kebutuhan urgent untuk
-          berpartisipasi secara penuh dan aman dalam masyarakat modern. Jangan
-          paksakan anak-anakmu mengikuti jejakmu, mereka diciptakan untuk
-          kehidupan di zaman mereka, bukan zamanmu” – <i>Socrates</i>.
-        </p>
-
-        <p>
-          Jadi pemerintah dan masyarakat harus siap dan bergerak cepat karena
-          demikian bangsa ini tidak hanya menjadi konsumen teknologi yang belum
-          tentu kotor dan jernihnya informasi tersebut.
-        </p>
-      </article>
+        <a href="artikel4.html" class="btn-baca">Baca Selengkapnya</a>
+      </div>
     </main>
 
     <!-- Footer -->

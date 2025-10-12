@@ -340,3 +340,24 @@ body.home {
 .artikel-page .meta {
   text-align: center;
 }
+
+/* ==== Perbaikan untuk Artikel Detail (artikel1.html) ==== */
+.artikel-page {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ) !important; /* putih bening 60% transparan */
+  box-shadow: none !important; /* hilangkan bayangan kotak */
+  border: none !important;
+}
+
+.artikel-page article {
+  background: none !important; /* pastikan tidak ada latar putih di dalamnya */
+  box-shadow: none !important;
+}
+
+main {
+  background: transparent !important; /* hilangkan latar putih global */
+}
