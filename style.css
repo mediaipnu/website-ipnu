@@ -374,3 +374,66 @@ main {
     background-size: 300px; /* tampilan HP kecil */
   }
 }
+
+/* ===== Halaman Opini (Tampilan Card) ===== */
+.opini-page {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  background: transparent; /* biar background logo tetap kelihatan */
+}
+
+.opini-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.opini-card {
+  background: rgba(255, 255, 255, 0.85); /* agak bening biar elegan */
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.opini-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.opini-card h3 {
+  color: #006400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.opini-card p {
+  font-size: 15px;
+  color: #333;
+  text-align: justify;
+}
+
+.opini-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #b8860b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.opini-card a:hover {
+  color: #006400;
+  text-decoration: underline;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .opini-card {
+    width: 100%;
+  }
+}

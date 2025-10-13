@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opini - IPNU IPPNU Media</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .opini-container {
+        max-width: 1000px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .opini-card {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 300px;
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .opini-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .opini-card h3 {
+        color: #004d00;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .opini-card p {
+        color: #444;
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      .opini-card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #b8860b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .opini-card a:hover {
+        color: #006400;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -25,9 +74,8 @@
               <li><a href="visi-misi.html">Visi & Misi</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
-            <a href="#">Karya Ilmiah</a>
+            <a href="#" class="active">Karya Ilmiah</a>
             <ul class="dropdown-menu">
               <li><a href="artikel.html">Artikel</a></li>
               <li><a href="opini.html" class="active">Opini</a></li>
@@ -39,37 +87,31 @@
       </nav>
     </header>
 
-    <!-- Halaman Opini -->
-    <main class="opini-page">
-      <article class="opini">
-        <h1>Opini: Pendidikan Karakter di Era Digital</h1>
-        <p class="meta">Ditulis oleh <b>Aisyah</b> • 13 September 2025</p>
+    <!-- Konten -->
+    <main>
+      <h2 style="text-align: center; color: #006400; margin-top: 30px">
+        Opini Pelajar
+      </h2>
 
-        <p>
-          Pendidikan di era digital menghadirkan tantangan baru bagi generasi
-          muda. Informasi yang mudah diakses dapat menjadi peluang sekaligus
-          ancaman apabila tidak diimbangi dengan pendidikan karakter yang kuat.
-        </p>
+      <section class="opini-container">
+        <div class="opini-card">
+          <h3>TO KING OF KING</h3>
+          <p>
+            Sebuah refleksi tentang makna cinta sejati dan bagaimana sejarah
+            hari kasih sayang dimaknai dalam kehidupan modern...
+          </p>
+          <a href="opini1.html">Baca Selengkapnya →</a>
+        </div>
 
-        <p>
-          Peran sekolah, keluarga, dan organisasi pelajar sangat penting dalam
-          menanamkan nilai-nilai akhlak, kedisiplinan, dan tanggung jawab.
-          Teknologi hanyalah alat, sedangkan yang menentukan arah penggunaannya
-          adalah manusia itu sendiri.
-        </p>
-
-        <p>
-          IPNU dan IPPNU sebagai organisasi pelajar memiliki posisi strategis
-          dalam mengarahkan generasi muda agar tidak hanya melek teknologi,
-          tetapi juga tetap berpegang pada nilai-nilai keislaman dan kebangsaan.
-        </p>
-
-        <p>
-          Pendidikan karakter di era digital bukanlah sekadar tambahan,
-          melainkan fondasi utama agar perkembangan teknologi dapat benar-benar
-          membawa manfaat bagi kemajuan bangsa.
-        </p>
-      </article>
+        <div class="opini-card">
+          <h3>RAKITAN PILU</h3>
+          <p>
+            Opini yang menyingkap sisi kejujuran, luka, dan filosofi kehidupan
+            melalui makna bunga mawar yang berduri namun indah...
+          </p>
+          <a href="opini2.html">Baca Selengkapnya →</a>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -77,7 +119,6 @@
       <p>&copy; 2025 IPNU & IPPNU Media</p>
     </footer>
 
-    <!-- Script untuk tombol menu -->
     <script>
       document
         .getElementById("menu-toggle")
