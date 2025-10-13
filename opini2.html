@@ -39,6 +39,27 @@
         <span>IPNU IPPNU Media</span>
       </div>
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <ul class="dropdown-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="active">Karya Ilmiah</a>
+            <ul class="dropdown-menu">
+              <li><a href="artikel.html" class="active">Artikel</a></li>
+              <li><a href="opini.html">Opini</a></li>
+              <li><a href="esai.html">Esai</a></li>
+            </ul>
+          </li>
+          <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="artikel-page">
@@ -68,5 +89,12 @@
     <footer>
       <p>&copy; 2025 IPNU & IPPNU Media</p>
     </footer>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
