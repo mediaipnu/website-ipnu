@@ -5,6 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esai - IPNU IPPNU Media</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ======== Styling Tambahan untuk Halaman Esai ======== */
+      .esai-page {
+        max-width: 900px;
+        margin: 60px auto;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .esai-page h2 {
+        color: #004d00;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+
+      .esai-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .esai-card {
+        background: rgba(255, 255, 255, 0.8);
+        border-left: 5px solid #ffd900;
+        padding: 18px 20px;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .esai-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .esai-card h3 {
+        color: #006400;
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+
+      .esai-card p {
+        color: #444;
+        font-size: 15px;
+        text-align: justify;
+      }
+
+      .esai-card a {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #b8860b;
+        text-decoration: none;
+      }
+
+      .esai-card a:hover {
+        color: #006400;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 480px) {
+        .esai-page {
+          padding: 20px;
+        }
+        .esai-card {
+          padding: 15px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -17,7 +88,7 @@
 
       <nav class="nav-links" id="nav-links">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li class="dropdown">
             <a href="#">Tentang Kami</a>
             <ul class="dropdown-menu">
@@ -26,11 +97,11 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Karya Ilmiah</a>
+            <a href="#" class="active">Karya Ilmiah</a>
             <ul class="dropdown-menu">
               <li><a href="artikel.html">Artikel</a></li>
               <li><a href="opini.html">Opini</a></li>
-              <li><a href="esai.html">Esai</a></li>
+              <li><a href="esai.html" class="active">Esai</a></li>
             </ul>
           </li>
           <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
@@ -40,49 +111,40 @@
 
     <!-- Halaman Esai -->
     <main class="esai-page">
-      <article class="esai">
-        <h1>Esai: Tantangan Pelajar di Era Globalisasi</h1>
-        <p class="meta">
-          Ditulis oleh <b>Muhammad Rizki</b> • 13 September 2025
-        </p>
+      <h2>Kumpulan Esai Pilihan</h2>
+      <div class="esai-cards">
+        <!-- Card Esai 1 -->
+        <div class="esai-card">
+          <h3>Menemukan Jejak Diri Tanpa Peta</h3>
+          <p>
+            Sebuah renungan tentang perjalanan hidup dan pencarian jati diri
+            tanpa panduan pasti, bagaimana setiap manusia menempuh jalannya
+            sendiri menuju kedewasaan dan makna hidup.
+          </p>
+          <a href="esai1.html">Baca Selengkapnya →</a>
+        </div>
 
-        <p>
-          Globalisasi membawa arus perubahan yang begitu cepat dalam berbagai
-          bidang kehidupan. Informasi, budaya, dan teknologi bergerak lintas
-          batas tanpa mengenal ruang dan waktu. Kondisi ini menghadirkan
-          tantangan tersendiri bagi para pelajar yang hidup di dalamnya.
-        </p>
+        <!-- Tambahkan Esai Berikutnya di Bawah Ini -->
+        <div class="esai-card">
+          <h3>Makna Sunyi dalam Proses Belajar</h3>
+          <p>
+            Esai reflektif tentang bagaimana keheningan dapat menjadi ruang
+            bertumbuh, membantu pelajar mengenal diri dan menemukan arah belajar
+            yang sesungguhnya.
+          </p>
+          <a href="#">Baca Selengkapnya →</a>
+        </div>
 
-        <p>
-          Salah satu tantangan utama adalah bagaimana pelajar dapat
-          mempertahankan jati diri dan nilai-nilai lokal di tengah derasnya arus
-          budaya global. Tanpa pegangan yang kuat, dikhawatirkan pelajar akan
-          kehilangan identitasnya sebagai generasi bangsa Indonesia.
-        </p>
-
-        <p>
-          Di sisi lain, globalisasi juga membuka peluang besar untuk berkembang.
-          Akses terhadap ilmu pengetahuan, teknologi, dan jejaring internasional
-          semakin luas. Pelajar dapat memanfaatkannya untuk meningkatkan
-          kualitas diri serta ikut berkontribusi dalam percaturan global.
-        </p>
-
-        <p>
-          Organisasi pelajar seperti IPNU dan IPPNU memiliki peran strategis
-          dalam mendampingi pelajar menghadapi tantangan globalisasi. Dengan
-          membekali pelajar dengan ilmu, iman, dan akhlak mulia, diharapkan
-          mereka mampu menjadi generasi yang adaptif, inovatif, sekaligus tetap
-          berpegang pada nilai-nilai ke-NU-an.
-        </p>
-
-        <p>
-          Oleh karena itu, penting bagi pelajar untuk memandang globalisasi
-          bukan sebagai ancaman, tetapi sebagai kesempatan untuk memperluas
-          wawasan dan memperkuat identitas. Dengan demikian, pelajar Indonesia
-          akan mampu menjadi agen perubahan yang membawa bangsa ini menuju masa
-          depan yang lebih baik.
-        </p>
-      </article>
+        <div class="esai-card">
+          <h3>Melihat Dunia dari Kaca Mata Pelajar</h3>
+          <p>
+            Sebuah tulisan yang mengajak kita memahami realita dunia pendidikan
+            melalui perspektif pelajar yang berjuang di tengah arus perubahan
+            zaman.
+          </p>
+          <a href="#">Baca Selengkapnya →</a>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -90,7 +152,7 @@
       <p>&copy; 2025 IPNU & IPPNU Media</p>
     </footer>
 
-    <!-- Script menu -->
+    <!-- Script -->
     <script>
       document
         .getElementById("menu-toggle")
