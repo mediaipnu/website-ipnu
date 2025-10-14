@@ -3,39 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sejarah - IPNU IPPNU Media</title>
+    <title>Puisi 1 - IPNU IPPNU Media</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <header class="navbar">
       <div class="logo">
         <img src="assets/logo resmi.png.png" alt="Logo" />
-        <span>Belajar Berjuang Bertaqwa</span>
+        <span>IPNU IPPNU Media</span>
       </div>
-
-      <!-- Tombol menu -->
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-
       <nav class="nav-links" id="nav-links">
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li class="dropdown">
-            <a href="#" class="active">Tentang Kami</a>
+            <a href="#">Tentang Kami</a>
             <ul class="dropdown-menu">
-              <li><a href="sejarah.html" class="active">Sejarah</a></li>
+              <li><a href="sejarah.html">Sejarah</a></li>
               <li><a href="visi-misi.html">Visi & Misi</a></li>
             </ul>
           </li>
-
           <li class="dropdown">
-            <a href="#">Karya Ilmiah</a>
+            <a href="#" class="active">Karya Ilmiah</a>
             <ul class="dropdown-menu">
               <li><a href="artikel.html">Artikel</a></li>
               <li><a href="opini.html">Opini</a></li>
               <li><a href="esai.html">Esai</a></li>
-              <li><a href="puisi.html">Puisi</a></li>
+              <li><a href="puisi.html" class="active">Puisi</a></li>
             </ul>
           </li>
           <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
@@ -43,25 +38,39 @@
       </nav>
     </header>
 
-    <!-- Konten Utama -->
-    <main class="content">
-      <section class="sejarah">
-        <h2>Sejarah</h2>
+    <!-- Isi Puisi -->
+    <main class="artikel-page">
+      <article>
+        <h2>Puisi 1 — *“Suara Dalam Hening”*</h2>
+        <p class="meta"><i>Oleh: Redaksi IPNU IPPNU Media</i></p>
+
         <p>
-          IPNU (Ikatan Pelajar Nahdlatul Ulama) dan IPPNU (Ikatan Pelajar Putri
-          Nahdlatul Ulama) merupakan organisasi pelajar di bawah naungan
-          Nahdlatul Ulama. Organisasi ini berdiri untuk menjadi wadah
-          pengembangan pelajar NU baik dalam bidang keilmuan, sosial, maupun
-          spiritual. Sejak berdirinya, IPNU dan IPPNU terus berperan dalam
-          mencetak generasi muda yang berakhlak mulia, berilmu, dan memiliki
-          semangat kebangsaan serta keislaman.
+          Dalam hening malam aku berdiri,<br />
+          Menatap langit, mencari arti.<br />
+          Bintang-bintang seakan berbisik,<br />
+          Menyampaikan pesan yang begitu lirih.
         </p>
-      </section>
+
+        <p>
+          Angin berhembus membawa rindu,<br />
+          Pada masa lalu yang takkan kembali.<br />
+          Waktu terus berjalan tanpa menunggu,<br />
+          Tapi kenangan tetap abadi di hati.
+        </p>
+      </article>
     </main>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 IPNU & IPPNU Media</p>
     </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>

@@ -3,24 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IPNU IPPNU Media</title>
+    <title>Puisi 3 - IPNU IPPNU Media</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
   </head>
-  <body class="home">
-    <!-- Navbar -->
+  <body>
     <header class="navbar">
       <div class="logo">
         <img src="assets/logo resmi.png.png" alt="Logo" />
-        <span>Belajar Berjuang Bertaqwa</span>
+        <span>IPNU IPPNU Media</span>
       </div>
-
-      <!-- Tombol menu selalu ada -->
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-
       <nav class="nav-links" id="nav-links">
         <ul>
-          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li class="dropdown">
             <a href="#">Tentang Kami</a>
             <ul class="dropdown-menu">
@@ -29,12 +24,12 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Karya Ilmiah</a>
+            <a href="#" class="active">Karya Ilmiah</a>
             <ul class="dropdown-menu">
               <li><a href="artikel.html">Artikel</a></li>
               <li><a href="opini.html">Opini</a></li>
               <li><a href="esai.html">Esai</a></li>
-              <li><a href="puisi.html">Puisi</a></li>
+              <li><a href="puisi.html" class="active">Puisi</a></li>
             </ul>
           </li>
           <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
@@ -42,14 +37,37 @@
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <h1>Selamat Datang di Website Kami</h1>
-      <h5><p>Portal berita, opini, dan karya ilmiah pelajar NU.</p></h5>
-    </section>
+    <main class="artikel-page">
+      <article>
+        <h2>Puisi 3 — *“Rindu Yang Diam”*</h2>
+        <p class="meta"><i>Oleh: Redaksi IPNU IPPNU Media</i></p>
+
+        <p>
+          Rindu ini tak bersuara,<br />
+          Ia diam dalam dada.<br />
+          Menunggu waktu yang entah,<br />
+          Untuk kembali bertemu cinta.
+        </p>
+
+        <p>
+          Dalam sepi ku panggil namamu,<br />
+          Dalam doa ku sebut cintamu.<br />
+          Biarlah semesta yang tahu,<br />
+          Betapa rinduku tak pernah layu.
+        </p>
+      </article>
+    </main>
 
     <footer>
-      <p>&copy; IpnuIppnu Palengaan Dajah</p>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
     </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
   </body>
 </html>

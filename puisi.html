@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumpulan Puisi - IPNU IPPNU Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo resmi.png.png" alt="Logo" />
+        <span>IPNU IPPNU Media</span>
+      </div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+      <nav class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a>
+            <ul class="dropdown-menu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="active">Karya Ilmiah</a>
+            <ul class="dropdown-menu">
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="opini.html">Opini</a></li>
+              <li><a href="esai.html">Esai</a></li>
+              <li><a href="puisi.html" class="active">Puisi</a></li>
+            </ul>
+          </li>
+          <li><a href="sarandanmasukan.html">Saran & Masukan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Kumpulan Puisi -->
+    <main>
+      <h2>Kumpulan Puisi Pilihan</h2>
+      <div class="karya-cards">
+        <div class="card">
+          <h3>Goresan Pena Santri</h3>
+          <p>
+            Puisi reflektif tentang ketulusan dan perjuangan seorang santri.
+          </p>
+          <p><a href="puisi1.html">Baca Selengkapnya →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Langkah di Jalan Sunyi</h3>
+          <p>Puisi yang menggambarkan perjalanan batin dan keteguhan hati.</p>
+          <p><a href="puisi2.html">Baca Selengkapnya →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Embun di Ujung Sajadah</h3>
+          <p>
+            Puisi religi yang menyentuh makna ikhlas dan doa dalam kesunyian.
+          </p>
+          <p><a href="puisi3.html">Baca Selengkapnya →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Waktu yang Berdoa</h3>
+          <p>
+            Puisi kontemplatif tentang waktu, harapan, dan takdir kehidupan.
+          </p>
+          <p><a href="puisi4.html">Baca Selengkapnya →</a></p>
+        </div>
+
+        <div class="card">
+          <h3>Tanah Ibu</h3>
+          <p>
+            Puisi tentang kecintaan kepada tanah air dan pengorbanan ibu
+            pertiwi.
+          </p>
+          <p><a href="puisi5.html">Baca Selengkapnya →</a></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 IPNU & IPPNU Media</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
